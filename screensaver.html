@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+	<html>
+
+		<head>
+
+			<style>
+            
+				body {
+					background: #000000;
+				}
+
+				#globe {
+					background: white;
+				}
+
+			</style>
+
+		</head>
+
+		<body>
+
+			<canvas id="globe">
+			</canvas>
+
+			<script>
+
+				const canvas = document.getElementById("globe");
+				const c = canvas.getContext("2d");
+				const r = Math.min(canvas.width, canvas.height) / 3;
+				const x = canvas.width / 2;
+				const y = canvas.height / 2;
+
+				function draw() {
+
+					c.clearRect(0, 0, canvas.width, canvas.height);
+					c.strokeStyle = "lime";
+					c.lineWidth = 1.5;
+					c.beginPath();
+					c.arc(x, y, r, 0, 2 * Math.PI);
+					c.stroke();
+					c.restore();
+					setTimeout(draw, 33);
+
+				}
+
+					draw();
+
+			</script>
+
+		</body>
+
+	</html>

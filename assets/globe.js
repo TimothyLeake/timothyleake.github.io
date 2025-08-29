@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", () => {
 const box = document.getElementById("globe");
 const scene = new THREE.Scene();
 const renderer = new THREE.WebGLRenderer({ antialias: true });
@@ -43,3 +44,4 @@ earthTexture.encoding = THREE.sRGBEncoding;
   }
 
   animate();
+  });

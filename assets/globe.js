@@ -9,8 +9,9 @@ const camera = new THREE.PerspectiveCamera(45, box.clientWidth / box.clientHeigh
 camera.position.z = 7;
 
 const textureLoader = new THREE.TextureLoader();
+const earthTexture = textureLoader.load("https://timothyleake.github.io/texture.PNG");
 const earthGeometry = new THREE.SphereGeometry(1, 64, 64);
-const earthMaterial = new THREE.MeshBasicMaterial({ map: textureLoader.load("https://timothyleake.github.io/texture.PNG") });
+const earthMaterial = new THREE.MeshBasicMaterial({ map: earthTexture });
 const earth = new THREE.Mesh(earthGeometry, earthMaterial);
 
 renderer.outputEncoding = THREE.sRGBEncoding;
@@ -22,10 +23,6 @@ earthTexture.encoding = THREE.sRGBEncoding;
   const axisTiltClockwise = -0.15; // radians (~11°) clockwise/counterclockwise
   const spinSpeed = 0.01; // radians per frame
   // ==============================================
-
-  const earthGeometry = new THREE.SphereGeometry(1, 64, 64);
-  const earthMaterial = new THREE.MeshBasicMaterial({ map: earthTexture });
-  const earth = new THREE.Mesh(earthGeometry, earthMaterial);
 
   // Pivot group for stationary tilted axis
   const pivot = new THREE.Group();

@@ -7,12 +7,14 @@ box.appendChild(renderer.domElement);
 
 const camera = new THREE.PerspectiveCamera(45, box.clientWidth / box.clientHeight, 0.1, 1000);
 camera.position.z = 7;
+/* Loads camera in */
 
 const textureLoader = new THREE.TextureLoader();
 const earthTexture = textureLoader.load("https://timothyleake.github.io/texture.PNG");
 const earthGeometry = new THREE.SphereGeometry(1, 64, 64);
 const earthMaterial = new THREE.MeshBasicMaterial({ map: earthTexture });
 const earth = new THREE.Mesh(earthGeometry, earthMaterial);
+/* Loads globe in */
 
 renderer.outputEncoding = THREE.sRGBEncoding;
 earthTexture.encoding = THREE.sRGBEncoding;

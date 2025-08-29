@@ -31,9 +31,6 @@ earthTexture.encoding = THREE.sRGBEncoding;
   pivot.add(earth);
   scene.add(pivot);
 
-  renderer.outputEncoding = THREE.sRGBEncoding;
-  earthTexture.encoding = THREE.sRGBEncoding;
-
   function animate() {
     requestAnimationFrame(animate);
 

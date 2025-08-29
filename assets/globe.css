@@ -15,7 +15,7 @@ body {
 
 #scroll {
 	position: fixed;
-	color: rgba(0, 255, 0, 0.2);
+	color: rgba(0, 255, 0, 0.3);
  	font-family: monospace;
 	text-align: center;
 	white-space: pre-wrap;

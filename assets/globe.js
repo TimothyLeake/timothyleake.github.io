@@ -22,18 +22,13 @@ renderer.outputEncoding = THREE.sRGBEncoding;
 earthTexture.encoding = THREE.sRGBEncoding;
 /* Don't exactly know what these lines do, but they keep the texture rendering crisp and saturated correctly */
 
-  // ===== Axis tilt variables (easy to edit) =====
-  const axisTiltTowards   = 0.3; // radians (~23°) tilt toward/away viewer
-  const axisTiltClockwise = -0.15; // radians (~11°) clockwise/counterclockwise
-  const spinSpeed = 0.01; // radians per frame
-  // ==============================================
-
-  // Pivot group for stationary tilted axis
-  const pivot = new THREE.Group();
-  pivot.rotation.x = axisTiltTowards;
-  pivot.rotation.z = axisTiltClockwise;
-  pivot.add(earth);
-  scene.add(pivot);
+const pivot = new THREE.Group();
+pivot.rotation.x = 0.3;
+pivot.rotation.z = -0.15;
+pivot.add(earth);
+scene.add(pivot);
+const spinSpeed = 0.01;
+/* This allows the globe to rotate on a stationary axis, and easily editable variables allow you to angle the axis as you please. */
 
   function animate() {
     requestAnimationFrame(animate);

@@ -1,25 +1,25 @@
 body {
-  background: #000000;
-  margin: 0;
-  overflow: hidden;
+	background: #000000;
+	margin: 0;
+	overflow: hidden;
 }
 
 #globe {
-  position: fixed;
-  left: 0%;
-  top: 0%;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
+	position: fixed;
+	left: 0%;
+	top: 0%;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
 }
 
 #scroll {
-  position: fixed;
-  color: rgba(0, 255, 0, 0.2);
-  font-family: monospace;
-  text-align: center;
-  white-space: pre-wrap;
-  overflow: hidden;
+	position: fixed;
+	color: rgba(0, 255, 0, 0.2);
+ 	font-family: monospace;
+	text-align: center;
+	white-space: pre-wrap;
+	overflow: hidden;
 	z-index: -1;
 }
 
@@ -29,17 +29,17 @@ body {
 	left: 0%;
 	top: 0%;
 	width: 100%;
-  height: 100%;
-  text-align: center;
-  white-space: pre-wrap;
-  animation: scroll-up 20s linear infinite;
-  display: block;
+	height: 100%;
+	text-align: center;
+	white-space: pre-wrap;
+	animation: scroll-up 15s linear infinite;
+	display: block;
 }
 
 @keyframes scroll-up {
-  from {
-    transform: translateY(0);
-  } to {
-    transform: translateY(-50%);
-  }
+	from {
+		transform: translateY(0);
+	} to {
+		transform: translateY(-50%);
+	}
 }

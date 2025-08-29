@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
 const box = document.getElementById("globe");
 const scene = new THREE.Scene();
-const renderer = new THREE.WebGLRenderer({ antialias: true });
+const renderer = new THREE.WebGLRenderer({antialias: true, alpha: true});
+renderer.setClearColor(0x000000, 0);
 renderer.setSize(box.clientWidth, box.clientHeight);
 box.appendChild(renderer.domElement);
 /* These are the necessary bits to establish the 3D model */

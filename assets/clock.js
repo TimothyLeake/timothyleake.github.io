@@ -5,7 +5,7 @@ function updateClock() {
 	let s = today.getSeconds();
 	m = checkTime(m);
 	s = checkTime(s);
-	document.getElementById('clock').innerHTML = h + ":" + m + ":" + s;
+	document.getElementById('clock').textContent = h + ":" + m + ":" + s;
 	setTimeout(updateClock, 1000);
 };
 window.onload = updateClock;

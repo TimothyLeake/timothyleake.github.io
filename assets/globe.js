@@ -18,7 +18,7 @@ const earth = new THREE.Mesh(earthGeometry, earthMaterial);
 /* Loads globe in */
 
 renderer.outputEncoding = THREE.sRGBEncoding;
-earthTexture.encoding = THREE.sRGBColorSpace;
+earthTexture.encoding = THREE.sRGBEncoding;
 /* Don't exactly know what these lines do, but they keep the texture rendering crisp and saturated correctly */
 
 const pivot = new THREE.Group();

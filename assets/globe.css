@@ -23,4 +23,6 @@ body {
  	font-family: monospace;
 	text-align: center;
 	z-index: -1;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
 }

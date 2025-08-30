@@ -15,6 +15,10 @@ body {
 
 #scroll {
 	position: fixed;
+	left: 0%;
+	top: 0%;
+	width: 0%;
+	height: 0%;
 	color: rgba(0, 255, 0, 0.3);
  	font-family: monospace;
 	text-align: center;

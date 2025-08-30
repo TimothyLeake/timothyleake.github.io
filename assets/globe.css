@@ -26,3 +26,16 @@ body {
 	white-space: pre-wrap;
 	overflow-wrap: break-word;
 }
+
+#clock {
+	position: fixed;
+	left: 10%;
+	top: 10%;
+	width: 25%;
+	height: 10%;
+	color: rgb(0, 255, 0);
+ 	font-family: monospace;
+	text-align: center;
+	z-index: 0;
+}
+	

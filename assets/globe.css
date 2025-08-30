@@ -29,10 +29,10 @@ body {
 
 #clock {
 	position: fixed;
-	left: 10%;
-	top: 10%;
+	left: 5%;
+	top: 5%;
 	color: rgb(0, 255, 0);
-	font-size: 7.5vh;
+	font-size: 10vh;
  	font-family: monospace;
 	text-align: left;
 	z-index: 0;

@@ -32,6 +32,7 @@ body {
 	left: 10%;
 	top: 10%;
 	color: rgb(0, 255, 0);
+	font-size: 7.5vh;
  	font-family: monospace;
 	text-align: left;
 	z-index: 0;

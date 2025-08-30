@@ -31,11 +31,9 @@ body {
 	position: fixed;
 	left: 10%;
 	top: 10%;
-	width: 25%;
-	height: 10%;
 	color: rgb(0, 255, 0);
  	font-family: monospace;
-	text-align: center;
+	text-align: left;
 	z-index: 0;
 }
 	

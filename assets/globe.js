@@ -30,14 +30,17 @@ scene.add(pivot);
 const spinSpeed = 0.01;
 /* This allows the globe to rotate on a stationary axis, and easily editable variables allow you to angle the axis as you please. */
 
-  function animate() {
-    requestAnimationFrame(animate);
+function animate() {
+	requestAnimationFrame(animate);
+	earth.rotateOnAxis(new THREE.Vector3(0,1,0), spinSpeed);
+	renderer.render(scene, camera);
+};
+animate();
+/* This actually renders the entire scene and loops ad inifinitum */
 
-    // Auto-rotation around stationary axis
-    earth.rotateOnAxis(new THREE.Vector3(0,1,0), spinSpeed);
-
-    renderer.render(scene, camera);
-  }
-
-  animate();
-  });
+window.addEventListener("resize", () => {
+	renderer.setSize(box.clientWidth, box.clientHeight);
+	camera.aspect = box.clientWidth / box.clientHeight;
+	camera.updateProjectionMatrix();
+});
+/* In case the window is resized */

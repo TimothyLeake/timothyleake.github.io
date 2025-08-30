@@ -7,5 +7,4 @@ fetch("https://timothyleake.github.io/assets/binary.txt")
 					document.getElementById("scroll").textContent = scrollState;
 		}
 		setInterval(scroll, 100);
-		};
   });

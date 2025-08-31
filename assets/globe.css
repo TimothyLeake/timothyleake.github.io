@@ -49,7 +49,7 @@ body {
 }
 	
 #search input[type="submit"] {
-			display: none;
+	display: none;
 }
 
 #search input[type="text"] {

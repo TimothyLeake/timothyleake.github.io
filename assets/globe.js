@@ -11,7 +11,7 @@ camera.position.z = 7;
 /* Loads camera in */
 
 const textureLoader = new THREE.TextureLoader();
-const earthTexture = textureLoader.load("https://timothyleake.github.io/assets/texture.png");
+const earthTexture = textureLoader.load("https://timothyleake.github.io/assets/globe.png");
 const earthGeometry = new THREE.SphereGeometry(1, 64, 64);
 const earthMaterial = new THREE.MeshBasicMaterial({ map: earthTexture });
 const earth = new THREE.Mesh(earthGeometry, earthMaterial);

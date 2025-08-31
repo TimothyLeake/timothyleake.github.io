@@ -11,12 +11,12 @@
 		</head>
 
 		<body>
-
-			 <form id="search" onsubmit="openGoogle()">
-				 I'm Feeling Lucky
-				 <input type="text">
-				 <input type="submit">
-			 </form> 
+			
+			<form id="search" onsubmit="return openGoogle()">
+				<input type="text" id="input" placeholder="I'm Feeling Lucky">
+				<input type="submit">
+			</form>
+			<script src="search.js"></script>
 
 			<div id="scroll"></div>
 			<script src="https://timothyleake.github.io/assets/scroll.js"></script>

@@ -37,4 +37,17 @@ body {
 	text-align: left;
 	z-index: 0;
 }
+
+#clock {
+	position: fixed;
+	left: 25%;
+	top: 75%;
+	width: 50%;
+	height: 10%;
+	color: rgb(0, 255, 0);
+	font-size: 5vh;
+ 	font-family: monospace;
+	text-align: left;
+	z-index: 0;
+}
 	

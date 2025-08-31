@@ -26,7 +26,7 @@ pivot.rotation.x = 0.3;
 pivot.rotation.z = -0.15;
 pivot.add(earth);
 scene.add(pivot);
-pivot.position.y = 1;
+pivot.position.y = .5;
 const spinSpeed = 0.01;
 /* This allows the globe to rotate on a stationary axis, and easily editable variables allow you to angle the axis or adjust the rotation speed as you please. */
 

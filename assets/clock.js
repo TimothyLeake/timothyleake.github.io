@@ -8,7 +8,7 @@ function checkTime(i) {
 };
 
 function formatTime(i) {
-	if (i >12) {
+	if (i > 12) {
 		i = i - 12;
 		suffix = " PM";
 	} else {

@@ -1,4 +1,4 @@
-let suffix = "fm";
+let suffix = " ";
 
 function checkTime(i) {
 	if (i < 10) {
@@ -10,9 +10,9 @@ function checkTime(i) {
 function formatTime(i) {
 	if (i >12) {
 		i = i - 12;
-		suffix = "PM";
+		suffix = " PM";
 	} else {
-		suffix = "AM";
+		suffix = " AM";
 	}
 	return i;
 };

@@ -13,7 +13,7 @@ body {
 	color: rgba(0, 255, 0, 0.3);
  	font-family: monospace;
 	text-align: center;
-	z-index: -1;
+	z-index: 0;
 	white-space: pre-wrap;
 	overflow-wrap: break-word;
 }

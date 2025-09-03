@@ -1,4 +1,4 @@
-fetch("https://timothyleake.github.io/assets/scroll.txt")
+fetch("https://timothyleake.com/assets/scroll.txt")
   .then(response => response.text())
   .then(data => {
 		let scrollState = data;

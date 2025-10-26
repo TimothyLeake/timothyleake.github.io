@@ -8,7 +8,11 @@ function scroll(){
 
 }
 
-getContent("https://www.timothyleake.com/assets/landing/scroll.txt").then(txt => {
-  text = (txt).repeat(5);
+function getContent() {
+  return fetch("https://www.timothyleake.com/assets/landing/scroll.txt").then(res => res.text());
+}
+
+getContent().then(txt => {
+	text = (txt).repeat(5);
 	setInterval(scroll, 150);
 });

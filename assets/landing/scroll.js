@@ -13,6 +13,6 @@ function getContent() {
 }
 
 getContent().then(txt => {
-	text = (txt).repeat(10);
+	text = txt.trimEnd().repeat(10);
 	setInterval(scroll, 150);
 });

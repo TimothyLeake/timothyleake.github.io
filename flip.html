@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🪙 Coin Flip</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      font-size: 8rem;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    #flash {
+      position: fixed;
+      inset: 0;
+      background: white;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .flash {
+      animation: flash 0.12s;
+    }
+
+    @keyframes flash {
+      from { opacity: 0.9; }
+      to   { opacity: 0; }
+    }
+  </style>
+</head>
+<body onclick="pick()">
+
+<div id="text">CLICK ANYWHERE</div>
+<div id="flash"></div>
+
+<script>
+  function pick() {
+    const dominant = Math.random() < 0.5;
+
+    document.body.style.backgroundColor = dominant ? "green" : "red";
+    document.getElementById("text").textContent =
+      dominant ? "Dominant" : "Recessive";
+
+    // force visible flash EVERY click
+    const flash = document.getElementById("flash");
+    flash.classList.remove("flash");
+    void flash.offsetWidth; // reflow
+    flash.classList.add("flash");
+  }
+</script>
+
+</body>
+</html>
